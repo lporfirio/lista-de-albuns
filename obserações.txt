@@ -1,0 +1,28 @@
+"SongSavor"
+
+Lista de Álbuns Que Eu Gosto Muito
+
+
+
+cor 1 rose pink : #EB6FBD
+cor 2 rich black : #11111F
+cor 3 blue munsell: #388697
+cor 4 honeydew: #E9FAE3
+
+fontes:
+Arial
+SweetSky
+Hover Classic Lite
+
+- criar um 'banco de dados' com os Álbuns
+
+- o usuário vai poder personalizar suas listas de álbuns
+  - irá criar suas listas com base nos álbuns do 'banco de dados'
+  - se o álbum não estiver no 'banco de dados' poderá criar do zero
+  - os álbuns criados pelo usuário irão para uma lista nova "albuns criados"
+
+- o usuário terá acesso a "minhas listas" e "meus álbuns"
+
+
+___________________
+
