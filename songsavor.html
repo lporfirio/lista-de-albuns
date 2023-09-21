@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SongSavor</title>
   <link rel="stylesheet" href="styles/pages/songsavor.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
-    <img src="images/logo.png" alt="logo SongSavor" class="logo">
+    <section class="logo">
+      <img src="images/logo.png" alt="logo SongSavor" class="logo">
+      <span class="song">Song</span>
+      <span class="savor">Savor</span>
+    </section>
+
     <h1>Você deve ter o melhor gosto musical do mundo!</h1>
   </header>
 
@@ -16,9 +31,37 @@
     <div class="js-sobre-texto"></div>
   </section>
 
+  <section class="listas">
+    <h2>Melhores álbuns por ano</h2>
+    <ul>
+      <li>2015</li>
+      <li>2016</li>
+      <li>2017</li>
+      <li>2018</li>
+      <li>2019</li>
+      <li>2020</li>
+      <li>2021</li>
+      <li>2022</li>
+      <li>2023</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Últimos álbuns adicionados</h2>
+    <div class="js-albuns-adicionados">
+      <ul>
+        <li>album 1</li>
+        <li>album 2</li>
+        <li>album 3</li>
+        <li>album 4</li>
+      </ul>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2023 SongSavor. Todos os direitos reservados.</p>
   </footer>
   <script src="scripts/songsavor.js"></script>
 </body>
+
 </html>

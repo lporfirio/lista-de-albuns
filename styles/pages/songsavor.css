@@ -1,3 +1,28 @@
+:root {
+  --cor-rose-pink: #EB6FBD;
+  --cor-rich-black: #11111F;
+  --cor-blue-munsell: #388697;
+  --cor-honeydew: #E9FAE3;
+  --cor-space-cadet: #292A57;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo {
   height: 200px;
+}
+
+.song {
+  color: var(--cor-rose-pink);
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+}
+
+.savor {
+  color: var(--cor-space-cadet);
+  font-size: 30px;
+  font-family: 'Advent Pro', sans-serif;
+  font-weight: 800;
 }
