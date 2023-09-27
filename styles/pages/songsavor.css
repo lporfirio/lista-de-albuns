@@ -8,21 +8,99 @@
 
 * {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
 }
+
+
+body {
+  display: grid;
+  width: 70vw;
+  margin: 0 auto; /* Centraliza o grid na página */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+header {
+  grid-column: span 2; /* Este elemento ocupa as duas colunas */
+}
+
+header h1 {
+  font-size: 2.0em;
+}
+
+section.sobre {
+  padding: 10px;
+  grid-column: span 2;
+}
+
+section.listas, section.section-albuns {
+  background-color: #EB6FBD; /* Apenas para visualização */
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  font-size: small;
+  
+}
+
+footer {
+  grid-column: span 2; /* Este elemento ocupa as duas colunas */
+  font-size: small;
+  text-align: center;
+  margin-top: 40px;
+}
+
 
 .logo {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "logo-imagem letras"
+  ;
+}
+
+.logo-imagem {
+  grid-area: logo-imagem;
   height: 200px;
+  position: relative;
+  left: -30px;
+  
 }
 
-.song {
-  color: var(--cor-rose-pink);
-  font-size: 50px;
-  font-family: 'Pacifico', cursive;
+.albuns-adicionados ul {
+  padding: 5px;
 }
 
-.savor {
-  color: var(--cor-space-cadet);
-  font-size: 30px;
-  font-family: 'Advent Pro', sans-serif;
-  font-weight: 800;
+.albuns-ano ul {
+  padding: 5px;
+}
+
+.novo-album {
+  grid-column: span 2;
+  background-color: #292A57;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    width: auto;
+    margin: 5px;
+    grid-gap: 10px;
+  }
+
+  header h1 {
+    font-size: larger;
+    padding: 0.5em;
+    margin: 0em;
+  }
+
+  .logo-imagem {
+    grid-area: logo-imagem;
+    height: 80px ;
+    position: relative;
+    left: -45px;
+  }
 }

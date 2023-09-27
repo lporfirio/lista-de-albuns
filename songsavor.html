@@ -19,9 +19,7 @@
 <body>
   <header>
     <section class="logo">
-      <img src="images/logo.png" alt="logo SongSavor" class="logo">
-      <span class="song">Song</span>
-      <span class="savor">Savor</span>
+      <img src="images/banner.png" alt="logo SongSavor" class="logo-imagem">
     </section>
 
     <h1>Você deve ter o melhor gosto musical do mundo!</h1>
@@ -33,22 +31,25 @@
 
   <section class="listas">
     <h2>Melhores álbuns por ano</h2>
-    <ul>
-      <li>2015</li>
-      <li>2016</li>
-      <li>2017</li>
-      <li>2018</li>
-      <li>2019</li>
-      <li>2020</li>
-      <li>2021</li>
-      <li>2022</li>
-      <li>2023</li>
-    </ul>
+    <div class="albuns-ano">
+      <ul>
+        <li>2015</li>
+        <li>2016</li>
+        <li>2017</li>
+        <li>2018</li>
+        <li>2019</li>
+        <li>2020</li>
+        <li>2021</li>
+        <li>2022</li>
+        <li>2023</li>
+      </ul>
+    </div>
+
   </section>
 
-  <section>
+  <section class="section-albuns">
     <h2>Últimos álbuns adicionados</h2>
-    <div class="js-albuns-adicionados">
+    <div class="js-albuns-adicionados albuns-adicionados">
       <ul>
         <li>album 1</li>
         <li>album 2</li>
@@ -58,10 +59,26 @@
     </div>
   </section>
 
+  <section class="novo-album">
+    <form id="albumForm">
+      <label for="albumName">Nome do Álbum:</label>
+      <input type="text" id="albumName" name="albumName"><br><br>
+
+      <label for="artist">Artista:</label>
+      <input type="text" id="artist" name="artist"><br><br>
+
+      <label for="year">Ano:</label>
+      <input type="text" id="year" name="year"><br><br>
+
+      <input type="submit" value="Adicionar Álbum">
+    </form>
+  </section>
+
+
   <footer>
     <p>&copy; 2023 SongSavor. Todos os direitos reservados.</p>
   </footer>
-  <script src="scripts/songsavor.js"></script>
+  <script src="scripts/songsavor.js" type="module"></script>
 </body>
 
 </html>

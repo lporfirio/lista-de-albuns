@@ -19,13 +19,21 @@ sobreDiv.innerHTML = textoAleatorio;
 // -- Listas de álbuns adicionados
 const albunsAdicionados = document.querySelector('.js-albuns-adicionados');
 
-albunsAdicionados.innerHTML = `
-      <ul>
-        <li>album 1</li>
-        <li>album 2</li>
-        <li>album 3</li>
-        <li>album 4</li>
-      </ul>
-`;
+const ultimosAlbuns = albuns.slice(-4).reverse();
 
-console.log(albuns);
+let listaHTML = '<ul>';
+for (const album of ultimosAlbuns) {
+  listaHTML += `<li>${album.nome} - ${album.artista}</li>`;
+}
+
+listaHTML += '</ul>';
+
+albunsAdicionados.innerHTML = listaHTML;
+
+
+// - Criar novo álbum
+
+
+
+//
+console.log('O arquivo songsavor.js está sendo executado corretamente.');

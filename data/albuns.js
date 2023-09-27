@@ -72,6 +72,26 @@ export const albuns = [{
       duracao: "3:12"
     }
   ]
-} 
+}, {
+  id: "dgt01",
+  nome: 'If You Leave',
+  artista: 'Daugther',
+  ano: '2013',
+  faixas: [
+    {
+      nome: "Winter",
+      duracao: "4:43"
+    }, {
+      nome: "Smother", 
+      duracao: "4:01"
+    }, {
+      nome: "Youth",
+      duracao: "4:13"
+    }, {
+      nome: "Still",
+      duracao: "3:32"
+    }
+  ]
+}
 ]
 
